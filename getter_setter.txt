@@ -1,0 +1,53 @@
+public class Student {
+
+    private String name;
+    private int roll;
+
+
+    public void setName(String name){
+
+        this.name=name;
+
+    }
+    public String getName(){
+
+        return name;
+    }
+
+    public void setRoll(int r){
+
+        this.roll=r;
+
+    }
+    public int getRoll(){
+
+
+        return roll;
+    }
+
+    public void display()
+    {
+        System.out.println("Name:"+getName());
+        System.out.println("Roll:"+getRoll());
+
+
+    }
+
+}
+
+public class Main {
+
+    public static void main(String[] args){
+
+        Student st=new Student();
+        st.setName("Eisty");
+        st.setRoll(82);
+        st.display();
+
+
+
+    }
+
+}
+
+

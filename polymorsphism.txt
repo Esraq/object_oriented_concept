@@ -1,0 +1,41 @@
+public class Calculator {
+
+
+    private int a,b,c,d;
+
+    public void calculation(int a,int b,int c,int d){
+
+        System.out.println("Add:"+a+b+c+d);
+
+    }
+
+    public void calculation(int a,int b,int c){
+
+
+        System.out.println("Multipication:"+a*b*c);
+    }
+
+    public void calculation(int a,int b){
+
+
+        System.out.println("Division:"+a/b);
+    }
+
+
+
+
+
+}
+public class Main {
+
+    public static void main(String[] args){
+
+        Calculator cl=new Calculator();
+        cl.calculation(6,7,8,9);
+        cl.calculation(6,7,8);
+        cl.calculation(10,2);
+
+    }
+
+}
+

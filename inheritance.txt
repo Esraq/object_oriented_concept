@@ -1,0 +1,47 @@
+public class Department {
+
+    protected String name;
+    protected String dept_id;
+
+    Department(){
+
+        System.out.println("I am from Super Class");
+    }
+
+}
+
+public class SWE extends Department{
+
+
+   SWE(){
+
+       System.out.println("I am from child class");
+
+   }
+    public void setName(String n){
+
+        this.name=n;
+    }
+    public String getName(){
+
+        return name;
+    }
+    public void setId(String i){
+
+        this.dept_id=i;
+    }
+    public String getId(){
+
+        return dept_id;
+    }
+
+
+    public void display(){
+
+        System.out.println("Name:"+name);
+        System.out.println("Department ID:"+dept_id);
+
+    }
+
+
+}
